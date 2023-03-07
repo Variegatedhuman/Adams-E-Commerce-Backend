@@ -21,8 +21,10 @@ router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
-  // delete on tag by its `id` value
+  router.delete('/:id', (req, res) => {
+    const savedProducts = db;
+    deleteNote(req.params.id, savedProducts);
+    res.json(true);
 });
 
 module.exports = router;
