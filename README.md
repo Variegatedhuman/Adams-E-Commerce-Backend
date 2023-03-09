@@ -1,117 +1,51 @@
-# E-commerce Back End Starter Code
+# Adam's E-Commerce-Backend
 
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+## Description
 
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database
+The goal of this project was to build the backend of a e-commerce website by integrating an express.js API with a MySQL database using Sequalize. 
+    
+## Table of Contents 
 
-Category
+* [Instructions](#Instructions)
 
-id
+* [Demo](#Demo)
+    
+* [Usage](#Usage)
+    
+* [Contributing](#Contributing)
+    
+* [Questions](#Questions)
 
-Integer
 
-Doesn't allow null values
+## Instructions
 
-Set as primary key
+In order to use this applcation you'll need to clone this repository to your local device
 
-Uses auto increment
+Run an "npm i" in your terminal
 
-category_name
+Sign into mysql and source the schema.sql file
 
-String
+Run node seeds/index.js to seed the database
 
-Doesn't allow null values
+Run "npm start" to execute the file
 
-Product
+Open insomnia and utilize the GET, POST, PUT, and DELETE methods to manipulate the database
 
-id
+## Demo
 
-Integer
+Below is an instructional video on how to use the application
 
-Doesn't allow null values
+[Link to video](https://drive.google.com/file/d/1RbT4JvHQq5hIvQDH2EDoze3waHkfEXe4/view)
 
-Set as primary key
+## Usage
+    
+There are no limitations for the use of this application
+    
+## Contibutions
+    
+Great thanks to my TA's and my tutor Matthew Calimbas
+    
 
-Uses auto increment
-
-product_name
-
-String
-
-Doesn't allow null values
-
-price
-
-Decimal
-
-Doesn't allow null values
-
-Validates that the value is a decimal
-
-stock
-
-Integer
-
-Doesn't allow null values
-
-Set a default value of 10
-
-Validates that the value is numeric
-
-category_id
-
-Integer
-
-References the category model's id
-
-Tag
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-tag_name
-
-String
-
-ProductTag
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-product_id
-
-Integer
-
-References the product model's id
-
-tag_id
-
-Integer
-
-References the tag model's id
+## Questions
+    
+If you have any comments/questions or you're interested in checking out any of my other projects, visit [My github](http://github.com/Variegatedhuman)
